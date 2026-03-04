@@ -1,4 +1,3 @@
-"""emailanalyzer
-"""
+"""emailanalyzer"""
 
 __version__ = "0.1"

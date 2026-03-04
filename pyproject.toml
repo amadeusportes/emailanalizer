@@ -16,7 +16,7 @@ dependencies = [
     "jupyterlab>=3.0",
     "notebook",
     "kedro[jupyter]~=1.2.0",
-    "kedro-datasets[pandas-csvdataset, pandas-exceldataset, pandas-parquetdataset, plotly-plotlydataset, plotly-jsondataset, matplotlib-matplotlibdataset]>=3.0",
+    "kedro-datasets[pandas,pandas-csvdataset,pandas-deltatabledataset,pandas-parquetdataset,polars-csvdataset,polars-parquetdataset]>=3.0",
     "kedro-viz>=6.7.0",
     "scikit-learn~=1.5.1",
     "seaborn~=0.12.1",
@@ -24,6 +24,8 @@ dependencies = [
     "ipykernel>=7.2.0",
     "pandas>=2.3.3",
     "matplotlib>=3.10.8",
+    "cloudpickle>=3.1.2",
+    "streamlit>=1.55.0",
 ]
 
 [project.scripts]
@@ -47,3 +49,6 @@ kedro_init_version = "1.2.0"
 tools = "['None']"
 example_pipeline = "True"
 source_dir = "src"
+
+[tool.kedro_telemetry]
+project_id = "ce0d184a4d9f40aaa3e59d74a44842d3"
